@@ -1,6 +1,8 @@
-# Detección de fraude eléctrico con enfoques tabulares y deep learning
+# Detección de fraude eléctrico con enfoques tabulares y secuenciales con *deep learning*
 
-El objetivo del proyecto es establecer una metodología transparente, estricta y de código abierto para la detección de fraude eléctrico. Gran parte de la literatura basada en el *dataset SGCC* presenta graves problemas de fuga de datos (*data leakage*); este flujo de trabajo documenta y justifica cada decisión para ofrecer una solución robusta y operativamente viable, priorizando la validez en escenarios reales frente a la optimización artificial de métricas.
+El objetivo del proyecto es establecer una metodología transparente, estricta y de código abierto para la detección de fraude eléctrico basada en el *dataset SGCC*. Este flujo de trabajo documenta y justifica cada decisión para ofrecer una solución robusta y operativamente viable, priorizando la validez en escenarios reales —eficiencia, xAI e impacto de los tipos de error— frente a la optimización artificial de métricas.
+
+Este repositorio muestra el código que se utiliza para crear un informe o memoria con el contexto del problema, análisis de literatura, etc. Por el momento, este informe no se adjunta.
 
 ## 📂 Estructura del Repositorio
 
@@ -22,7 +24,8 @@ Los scripts (`.py`) se utilizan como apoyo para mantener los *notebooks* limpios
 |-- modeling.py                 # Optimización (Optuna) y evaluación
 |-- requirements.txt
 |-- models/                     # Modelos finales y metadatos (ML/ y DL/)
-|-- data/                       # Dataset original, extracciones, variables filtradas, hiperparámetros | NO SE PUBLICA POR PESO (1.67Gb)
+|-- data/                       # Dataset original, extracciones, variables filtradas, hiperparámetros
+   --> data NO SE PUBLICA POR PESO (1.67Gb)
 ```
 
 ## Flujo del proyecto
@@ -31,7 +34,7 @@ Los scripts (`.py`) se utilizan como apoyo para mantener los *notebooks* limpios
 |---|---|
 | `01_EDA.ipynb` | Análisis exploratorio: estructura temporal, desbalance, significado de ceros y nulos, outliers, estacionalidad y separabilidad |
 | `02_feature_engineering.ipynb` | Explica la lógica y el flujo del preprocesamiento, extracción de variables y selección con *BorutaShap* |
-| `03_ML_modeling.ipynb` | Comparativa LightGBM / XGBoost / CatBoost, estrategias de remuestreo, optimización con Optuna, explicabilidad SHAP |
+| `03_ML_modeling.ipynb` | Conjunto óptimo, *Resampling*, Comparativa LightGBM / XGBoost / CatBoost / ensamblados, optimización con Optuna (TPE), explicabilidad SHAP |
 | `04_DL_modeling.ipynb` | CNN 1D multiescala con atención temporal sobre series crudas, xAI por pesos de atención y oclusión |
 
 ## 📊 Resultados Principales

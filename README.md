@@ -2,7 +2,7 @@
 
 El objetivo del proyecto es establecer una metodología transparente, estricta y de código abierto para la detección de fraude eléctrico basada en el *dataset SGCC*. Este flujo de trabajo documenta y justifica cada decisión para ofrecer una solución robusta y operativamente viable, priorizando la validez en escenarios reales —eficiencia, xAI e impacto de los tipos de error— frente a la optimización artificial de métricas.
 
-Este repositorio muestra el código que se utiliza para crear un informe o memoria con el contexto del problema, análisis de literatura, etc. Por el momento, este informe no se adjunta.
+Este repositorio muestra el código que se utiliza para crear un informe o memoria con el contexto del problema, análisis de literatura, etc.
 
 ## 📂 Estructura del Repositorio
 
